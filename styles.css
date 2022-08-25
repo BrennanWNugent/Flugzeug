@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  height: 600px;
+}
+
+.left {
+  background-color: blueviolet;
+}
+
+.right {
+  background-color: brown;
+}
+
+#topBanner {
+    padding: 60px;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+  }
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}

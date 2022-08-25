@@ -3,9 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>Flugzeug</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
 
+<!-- Top Banner Space -->
+        <div id = 'topBanner'>
+            <h1>Flugzeug!</h1>
+
+<!-- Space to designate filters of airport and plane type -->
+<!-- May change this in the future to allow for typing of airports -->
+            <label for="airports">Enter your Airport:</label>
+            <select id="airports" name="airports" size="1">
+                <option value="Any">Any</option>
+                <option value="KDCA">KDCA</option>
+                <option value="KBOS">KBOS</option>
+                <option value="KEWR">KEWR</option>
+            </select>
+
+            <label for="manufacturer">Enter your Aircraft Manufacturer:</label>
+            <select id="manufacturer" name="manufacturer" size="1">
+                <option value="Any">Any</option>
+                <option value="Boeing">KDCA</option>
+                <option value="Airbus">KBOS</option>
+                <option value="Embraer">KEWR</option>
+            </select>
+            
+            <label for="model">Enter your Aircraft Model:</label>
+            <select id="model" name="model" size="1">
+                <option value="Any">Any</option>
+                <option value="787-10">787-10</option>
+                <option value="A380">A380</option>
+                <option value="A320Neo">A320Neo</option>
+            </select>
+
+
+        </div>
+
+<!-- Using CSS Grid Methods to create two side by side Divs -->
+
+        <div class="grid-container">
+
+            <div class="grid-child left">
+                <table class = 'center'>
+                    <tr>
+                      <th>Depature Airport</th>
+                      <th>Destination Airport</th>
+                      <th>Plane Model</th>
+                    </tr>
+                  </table>
+            </div>
+
+            <div class="grid-child right">
+                Globe lol
+            </div>
+        
+        </div>
+
+
+
+
+        <script src='https://d3js.org/d3.v4.min.js'></script>
+        <script src='main.js'></script>
 
     </body>
 </html>
